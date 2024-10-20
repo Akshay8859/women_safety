@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+body{
+    background-image: url('/assets/247a355451b3c5be443b8cf9b9fcbfbb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.container {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    background-color: #008080; /* Teal color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em; /* Header font size */
+    color: white;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em; /* Smaller font size for subheader */
+    color: white;
+    margin: 10px 0;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+    width: 90%; /* Increased width (now 85% of the container) */
+    max-width: 900px; /* Increased max width to allow more content */
+    margin: 20px auto; /* Center the content horizontally */
+    padding: 20px; /* Padding inside the content box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+h2 {
+    font-size: 1.8em; /* Subheader font size */
+    color: #008080; /* Teal color */
+    margin-top: 15px;
+}
+
+p, li {
+    font-size: 1em; /* Body text font size */
+    line-height: 1.5;
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}

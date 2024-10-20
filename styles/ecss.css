@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #008080; /* Teal Color */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header .header-content h1 {
+    font-size: 2.5rem;
+}
+
+header .header-content p {
+    font-size: 1.2rem;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #006666;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section */
+.intro {
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.feature-box {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box i {
+    font-size: 2rem;
+    color: #008080;
+}
+
+.feature-box h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #008080;
+}
+
+/* Map Section */
+.map-section {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+    position: relative;
+    max-width: 600px; /* Limit the maximum width of the image */
+    margin: 0 auto;
+}
+
+.map-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    max-width: 100%; /* Prevent the image from exceeding the container width */
+}
+
+.interactive-icons .icon {
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #ff6347;
+}
+
+/* Safety Features Section */
+.safety-features {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005555;
+}
+
+/* Footer */
+footer {
+    background-color: #006666;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

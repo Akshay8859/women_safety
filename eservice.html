@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Services</title>
+    <link rel="stylesheet" href="/styles/ecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section with Full-Width Teal Background -->
+    <header>
+        <div class="header-content">
+            <h1>Emergency Services</h1>
+        </div>
+    </header>
+
+    <!-- Simplified Navigation Bar -->
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/womenabout.html">About</a></li>
+            
+                
+                <li><a href="/mn.html">India At A Glance</a></li>
+                <li><a href="/chat.html">AAI Chatbot</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/laws.html">Laws and Policies</a></li>
+                <li><a href="/area.html">Know Your Area</a></li>
+                <li><a href="/login.html">LOGIN / SIGN UP</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h1>Emergency Services</h1>
+            <p>Our advanced safety system ensures real-time protection by monitoring public spaces through government surveillance. It detects 
+                harmful activities and immediately alerts the authorities, enabling faster police response. Committed to creating safer 
+                environments, this service offers peace of mind by helping prevent violence and ensuring swift action to protect the community.</p>
+        </section>
+
+        <!-- Features and Services -->
+        <section class="features">
+            <div class="feature-box">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Single Emergency Number 112</h3>
+                <p>The Single Emergency Number 112 serves as a vital tool in women's safety and violence detection systems, providing a direct and 
+                    accessible means for individuals to report emergencies and seek immediate assistance. By consolidating various emergency 
+                    services under one number, it enhances response efficiency, ensuring that help is quickly dispatched in critical situations.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-bell"></i>
+                <h3>Panic SOS Signals</h3>
+                <p>Panic SOS signals are a crucial feature in women's safety and violence detection systems, enabling individuals to discreetly 
+                    alert authorities or trusted contacts in emergencies. By simply activating the SOS function, users can send their location and 
+                    distress signals, facilitating swift intervention and support when needed most.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile App 112 India</h3>
+                <p>QThe Mobile App 112 India improves women's safety and violence detection systems by allowing users to report emergencies easily.
+                     With features like Panic SOS signals and location tracking, the app ensures swift assistance, empowering women to seek help 
+                     discreetly when needed.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Real-Time Vehicle Tracking</h3>
+                <p>Real-time vehicle tracking enhances women's safety and violence detection systems by providing continuous monitoring of 
+                    transportation. This feature allows users to share their location with trusted contacts, ensuring transparency and enabling 
+                    swift intervention if an emergency arises during travel.</p>
+            </div>
+        </section>
+
+        <!-- Interactive India Map with Emergency Features -->
+        <section class="map-section">
+            <h2>Emergency Features Across India</h2>
+            <div class="map-container">
+                <img src="/assets/Screenshot (198).png" alt="India Map with Emergency Icons">
+            </div>
+        </section>
+
+        <!-- Violence Detection for Women’s Safety -->
+        <section class="safety-features">
+            <h2>Violence Detection for Women's Safety</h2>
+            <p>AAI has advanced capabilities to ensure women's safety. Public transportation systems are integrated with SOS signals, and security cameras in public places can detect violence through abnormal behavior, such as screams or sudden movements.</p>
+            <button onclick="detectAbnormalSound('scream')">Simulate Violence Detection</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Emergency Response Support System | Designed by Govt. of India</p>
+    </footer>
+
+    <script>
+        // Interactive Violence Detection Simulation
+        function detectAbnormalSound(sound) {
+            if (sound === 'scream') {
+                alert('Violence detected! Sending alert to nearest police station.');
+                // Additional functionalities such as sending an emergency signal or alert can be added here.
+            }
+        }
+
+        // Add interactive map features for hover tooltips
+        const icons = document.querySelectorAll('.icon');
+        icons.forEach(icon => {
+            icon.addEventListener('mouseover', () => {
+                icon.classList.add('highlight');
+            });
+            icon.addEventListener('mouseout', () => {
+                icon.classList.remove('highlight');
+            });
+        });
+    </script>
+</body>
+</html>

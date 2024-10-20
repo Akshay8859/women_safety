@@ -1,0 +1,196 @@
+:root {
+  --reddish-brown: #8B4513;
+  --light-background: #f4f4f4;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--light-background);
+  color: white;
+}
+
+/* Header */
+.header {
+  background-color: var(--reddish-brown);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+  height: 60px; /* Adjust height for the header */
+}
+
+/* Centering the menu icon */
+.menu-btn {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+/* Title is still centered in the header */
+.title {
+  text-align: center;
+  flex-grow: 1;
+  padding-left: 50px; /* Ensures no overlap with the menu button */
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: lightgray;
+}
+
+.header-buttons {
+  display: flex;
+}
+
+.login-btn, .signup-btn {
+  background-color: white;
+  border: none;
+  color: var(--reddish-brown);
+  padding: 8px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.signup-btn {
+  background-color: var(--reddish-brown);
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: lightgray;
+}
+
+.signup-btn:hover {
+  background-color: #6a2f10;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -291px;
+  width: 250px;
+  height: 100%;
+  background-color: var(--reddish-brown);
+  /* background-color: #a74a18; */
+  padding: 20px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.side-menu h2 {
+  margin-top: 0;
+}
+
+.side-menu p {
+  font-size: 14px;
+}
+
+.close-btn {
+  font-size: 32px; /* Make it the same size as the menu icon */
+  color: white;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 0;
+  transition: 0.3s;
+}
+
+/* Video Grid Layout */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-section {
+  position: relative;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-section video {
+  width: 100%;
+  height: auto;
+}
+
+.video-section p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Fullscreen Video */
+.fullscreen-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.fullscreen-video video {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-fullscreen {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* When the side menu is open */
+.side-menu-open #sideMenu {
+  left: 0;
+}
+
+.side-menu-open .main-content {
+  margin-left: 250px;
+}

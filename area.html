@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Area</title>
+    <link rel="stylesheet" href="/styles/area.css">
+    <script defer src="/scripts/area.js"></script> <!-- Link to the script -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Know Your Area</h1>
+            <p>Stay informed about local police stations and safety updates in your area.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Police Station Dropdown Section -->
+        <section class="police-dropdown">
+            <h2>Select Your Nearby Police Station</h2>
+            <form>
+                <label for="police-station"><b>Police Station:</b></label>
+                <select id="police-station" name="police-station">
+                    <option value="station-1"></option>
+                    <option value="station-2">Nehru Colony Police Station</option>
+                    <option value="station-3">Lakhibagh Police Station</option>
+                    <option value="station-4">Subhash Nagar Police Station</option>
+                    <option value="station-5">Pant Marg Police Station</option>
+                    <option value="other">Other</option> <!-- Other option added -->
+                </select>
+                <div id="other-input" style="display: none;">
+                    <label for="other-station">Enter Police Station Name:</label>
+                    <input type="text" id="other-station" name="other-station" placeholder="Enter police station">
+                </div>
+                <button type="submit">Find</button>
+            </form>
+        </section>
+
+        <!-- Criminals in Search Section -->
+        <section class="criminals">
+            <h2>Criminals Wanted by Police</h2>
+            <div class="criminal-gallery">
+                <div class="criminal">
+                    <img src='/assets/m.png' alt="Criminal 1">
+                </div>
+                <div class="criminal">
+                    <img src="/assets/n.png" alt="Criminal 2">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Know Your Area | Stay Safe & Informed</p>
+        </div>
+    </footer>
+</body>
+</html>

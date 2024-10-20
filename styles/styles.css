@@ -1,0 +1,185 @@
+/* Basic styling for the body, container, header, and other elements */
+html {
+    scroll-behavior: smooth; /* This enables smooth scrolling */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links li{
+    list-style: none;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.header-left a, .header-right a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+    .header-left a:hover, .header-right a:hover {
+        color: #4caf50;
+    }
+
+.header-right input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+    .register-btn:hover {
+        background-color: #45a049;
+    }
+
+/* Hero section styling */
+.hero {
+    background-image: url('https://www.shutterstock.com/shutterstock/photos/1948083469/display_1500/stock-vector-concept-of-support-and-protection-of-young-single-mothers-with-babies-help-hands-and-assistance-of-1948083469.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.cta-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .cta-btn:hover {
+        background-color: #45a049;
+    }
+
+/* Features section styling */
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
+.feature-item {
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    background-color: #fafafa;
+    transition: transform 0.3s ease;
+}
+
+    .feature-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-item img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .feature-item h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .feature-item p {
+        margin-bottom: 20px; /* Add space between the paragraph and the button */
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .feature-item ul {
+        text-align: left;
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .feature-item li {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 8px;
+    }
+
+/* Animation Classes */
+.animated {
+    visibility: hidden;
+}
+
+.fade-in {
+    visibility: visible;
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
